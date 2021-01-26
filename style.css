@@ -1,0 +1,907 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+/* Página Home*/
+/* Sessão Header - Igual para todas as páginas */
+
+header{
+    padding: 20px 2% 35px 2%;
+    height: 130px;
+}
+
+header#pagina-venda{
+    border-bottom: 3px solid #EB2D2D;
+}
+
+header div.logo{
+    float: left;
+}
+
+header nav.desktop{
+    float: right;
+    position: relative;
+    top: 30px;
+}
+
+header nav.desktop ul{
+    list-style-type: none;
+}
+
+header nav.desktop ul li{
+    float: left;
+    font-size: 23px;
+    text-transform: uppercase;
+    padding: 0 30px;
+    font-style: italic;
+}
+
+header nav.desktop ul li #selected{
+    color: #EB2D2D;
+}
+
+header nav.desktop ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+header nav.mobile{
+    display: none;
+    float: right;
+    width: 32px;
+    height: 32px;
+    margin-top: 30px;
+    cursor: pointer;
+    background-image: url('imagens/icon_menu.png');
+    background-size: 100% 100%;
+}
+
+header nav.mobile ul{
+    display: none;
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    top: 103px;
+    background-color: white;
+    text-align: center;
+    list-style-type: none;
+}
+
+header nav.mobile ul li{
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 9px 0;
+    font-style: italic;
+    border-bottom: 2px solid #EB2D2D;
+}
+
+header nav.mobile ul li #selected{
+    color: #EB2D2D;
+}
+
+header nav.mobile ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+/* Sessão banner */
+
+section.banner{
+    overflow: hidden;
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    background-image: url('imagens/bg.jpg');
+    background-size: contain;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+
+section.banner .text-banner{
+    padding: 100px 30px;
+}
+
+section.banner .text-banner-single{
+    width: 280px;
+    height: 60px;
+    padding: 12px 35px;
+    margin-top: 20px;
+    color: white;
+    font-size: 25px;
+    font-style: italic;
+    text-transform: uppercase;
+    background-image: url('imagens/box-text.png');
+    background-size: 100% 100%;
+}
+
+section.banner .text-banner-single:nth-of-type(2){
+    width: 225px;
+    position: relative;
+    left: -12px;
+}
+
+section.banner .text-banner-single:nth-of-type(3){
+    width: 170px;
+    position: relative;
+    left: -22px;
+}
+
+section.banner .text-banner-single:nth-of-type(4){
+    width: 280px;
+    color: black;
+    background-image: url('imagens/box-white-text.png');
+    position: relative;
+    left: -32px;
+}
+
+/* Sessão veículos destaque */
+
+section.veiculos-destaque{
+    padding: 90px 2%;
+}
+
+.line-titulo{
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.line-titulo .ln1{
+    position: absolute;
+    top: 19px;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+}
+
+.line-titulo h2{
+    position: relative;
+    padding: 0 20px;
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+    font-size: 27px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+section.veiculos-destaque .container{
+    max-width: 1000px;
+    padding: 40px 0;
+}
+
+.vitrine-destaque{
+    float: left;
+    width: 33.3%;
+    padding: 20px;
+}
+
+.vitrine-destaque .carro-img{
+    width: 100%;
+    padding-top: 80%;
+    background-image: url('imagens/carro1.jpg');
+    background-size: 100% 100%;
+}
+
+.vitrine-destaque h2{
+    margin-top: 12px;
+    padding-left: 5px;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.vitrine-destaque p{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    font-size: 20px;
+    font-style: italic;
+    color: #353535;
+}
+
+.btn1{
+    display: block;
+    font-weight: normal;
+    color: white;
+    width: 110px;
+    height: 40px;
+    background-color: #EB2D2D;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 3px solid #B21E1E;
+    cursor: pointer;
+}
+
+.vitrine-destaque a{
+    margin-left: 8px;
+    padding-top: 8px;
+}
+
+/*Sessão serviços descrição e depoimentos */
+
+section.servicos-descricao{
+    display: flex;
+}
+
+section.servicos-descricao .half1{
+    width: 50%;
+    padding: 90px 8%;
+    background-color: #242424;
+    color: white;
+    text-align: right;
+}
+
+section.servicos-descricao .half1-wrapper{
+    display: inline-block;
+    text-align: left;
+    padding-right: 100px;
+}
+
+section.servicos-descricao .half1-wrapper h2{
+    font-size: 32px;
+    font-style: italic;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+section.servicos-descricao .half1-wrapper ul{
+    display: inline-block;
+    list-style-position: inside;
+    margin: 20px 0 20px 0;
+}
+
+section.servicos-descricao .half1-wrapper ul li{
+    font-size: 23px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+section.servicos-descricao .half1-wrapper a{
+    display: inline-block;
+    padding-top: 5px;
+    vertical-align: bottom;
+    margin-left: 40px;
+}
+
+section.servicos-descricao .half2{
+    width: 50%;
+    padding: 90px 8%;
+    background-color: #EB2D2D;
+    color: white;
+}
+
+section.servicos-descricao .half2 h2{
+    font-size: 32px;
+    font-style: italic;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+section.servicos-descricao .half2 .depoimentos-single{
+    margin-top: 20px;
+}
+
+section.servicos-descricao .half2 .depoimentos-single p{
+    font-size: 23px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+section.servicos-descricao .half2 .navigation{
+    float: left;
+    width: 100%;
+    max-width: 700px;
+    margin-top: 30px;
+}
+
+section.servicos-descricao .half2 .navigation .arrows{
+    float: left;
+}
+
+section.servicos-descricao .half2 .navigation img{
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+section.servicos-descricao .half2 .navigation .nome-depoimento{
+    float: right;
+    color: #252525;
+    font-size: 23px;
+}
+
+/*Sessão formulário de contato */
+
+section.contato{
+    padding: 90px 2%;
+}
+
+section.contato form{
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+section.contato form .input-wrapper{
+    float: left;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+section.contato form input[type=text]{
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    line-height: 40px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+}
+
+section.contato form textarea{
+    width: 100%;
+    height: 120px;
+    font-size: 18px;
+    line-height: 40px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+section.contato form .w100{
+    width: 100%;
+}
+
+section.contato form .w50{
+    width: 50%;
+}
+
+section.contato form .input-wrapper:nth-of-type(5){
+    text-align: center;
+}
+
+section.contato form input[type=submit]{
+    display: inline-block;
+    font-size: 18px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+/*Sessão rodapé - Igual para todas as páginas */
+
+footer{
+    padding: 40px 2%;
+    background-color: #252525;
+}
+
+footer nav{
+    float: left;
+}
+
+footer nav ul{
+    list-style-type: none;
+}
+
+footer nav ul li{
+    float: left;
+    font-size: 18px;
+    font-style: italic;
+    text-transform: uppercase;
+    padding: 4px 30px;
+}
+
+footer nav ul li #selected{
+    color: #EB2D2D;
+}
+
+footer nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+footer p{
+    float: right;
+    font-size: 18px;
+    font-style: italic;
+    color: white;
+}
+
+/* Página Venda */
+/* Sessão sidebar e vitrine de veículos */
+
+section.venda{
+    min-height: 90%;
+    padding: 90px 2%;
+}
+
+section.venda .line-titulo{
+    max-width: 1100px;
+}
+
+section.venda .content-venda{
+    margin-top: 40px;
+}
+
+section.venda .content-venda .sidebar{
+    float: left;
+    width: 30%;
+}
+
+section.venda .content-venda .sidebar .search1{
+    width: 90%;
+}
+
+section.venda .content-venda .sidebar .search1 h2{
+    font-size: 24px;
+    font-weight: normal;
+    color: black;
+}
+
+section.venda .content-venda .sidebar .search1 .barra-preco{
+    width: 100%;
+    height: 20px;
+    border-radius: 20px;
+    border: 2px solid rgb(180,180,180);
+    margin-top: 20px;
+    background-color: white;
+    position: relative;
+}
+
+section.venda .content-venda .sidebar .search1 .barra-preco-fill{
+    width: 0;
+    height: 18px;
+    border-radius: 20px;
+    border: 2px solid rgb(200,200,200);
+    background-image: linear-gradient(to bottom, rgb(255,255,255), rgb(200,200,200));
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+section.venda .content-venda .sidebar .search1 .pointer-barra{
+    width: 25px;
+    height: 30px;
+    border-radius: 8px;
+    background-image: linear-gradient(to bottom, rgb(255,255,255), rgb(210,210,210));
+    border: 2px solid rgb(160,160,160);
+    z-index: 3;
+    position: absolute;
+    top: -7px;
+    left: 0;
+    cursor: pointer;
+}
+
+section.venda .content-venda .sidebar .search1 .valor-pesquisa{
+    margin-top: 8px;
+}
+
+section.venda .content-venda .sidebar .search1 .valor-pesquisa p{
+    font-size: 15px;
+    color: black;
+}
+
+section.venda .content-venda .sidebar .search1 .valor-pesquisa p:nth-of-type(1){
+    float: left;
+}
+
+section.venda .content-venda .sidebar .search1 .valor-pesquisa p:nth-of-type(2){
+    float: right;
+}
+
+section.venda .content-venda .sidebar .search2 h2{
+    font-size: 24px;
+    font-weight: normal;
+    color: black;
+    margin-top: 50px;
+}
+
+section.venda .content-venda .sidebar .search2 .form-venda-wrapper{
+    margin-top: 10px;
+}
+
+section.venda .content-venda .sidebar .search2 .form-venda-wrapper input[type=checkbox]{
+    display: none;
+}
+
+section.venda .content-venda .sidebar .search2 .form-venda-wrapper label{
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    vertical-align: top;
+    cursor: pointer;
+    position: relative;
+}
+
+section.venda .content-venda .sidebar .search2 .form-venda-wrapper .circle{
+    display: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: black;
+    position: absolute;
+    left: 6px;
+    top: 6px;
+}
+
+section.venda .content-venda .sidebar .search2 .form-venda-wrapper input[type=checkbox]:checked + label > .circle{
+    display: block;
+}
+
+section.venda .content-venda .sidebar .search2 .form-venda-wrapper span{
+    display: inline-block;
+    padding: 0 8px;
+    vertical-align: top;
+    font-size: 17px;
+    font-style: italic;
+}
+
+section.venda .content-venda .vitrine-venda{
+    float: left;
+    width: 70%;
+}
+
+/* Página Veículo Teste - Mais detalhes veículo */
+/* Sessão detalhes do veículo */
+
+section.venda-single{
+    padding: 90px 2% 50px 2%;
+}
+
+section.venda-single .container{
+    max-width: 900px;
+    padding: 40px 0;
+}
+
+section.venda-single .info-veiculo{
+    float: left;
+    width: 60%;
+}
+
+section.venda-single .info-veiculo .info-bread{
+    padding: 20px 0;
+}
+
+section.venda-single .info-veiculo .info-bread a{
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-right: 10px;
+    font-style: italic;
+    color: black;
+    text-decoration: none;
+}
+
+section.venda-single .info-veiculo .info-bread a:last-child{
+    color: #EB2D2D;
+}
+
+section.venda-single .info-veiculo .info-bread span{
+    vertical-align: top;
+    padding-right: 10px;
+}
+
+section.venda-single .foto-destaque{
+    width: 100%;
+    padding-top: 70%;
+    /*background-image: url('imagens/carro1.jpg');*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section.venda-single .nav-galeria-parent{
+    width: 100%;
+    padding: 36px;
+    position: relative;
+}
+
+section.venda-single .nav-galeria-parent .arrow-left-nav{
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    background-image: url('imagens/arrow-left.png');
+    background-size: 100% 100%;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+section.venda-single .nav-galeria-parent .arrow-right-nav{
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    background-image: url('imagens/arrow-right.png');
+    background-size: 100% 100%;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+section.venda-single .nav-galeria-parent .nav-galeria{
+    overflow: hidden;
+    width: 100%;
+}
+
+/*section.venda-single .nav-galeria .nav-galeria-wrapper{
+    width: 200%;
+}*/
+
+section.venda-single .nav-galeria .nav-galeria-wrapper .mini-img-wrapper{
+    float: left;
+    /*width: calc(33.3% * (100 / 200));*/
+    padding: 5px;
+}
+
+section.venda-single .nav-galeria .nav-galeria-wrapper .mini-img{
+    width: 100%;
+    padding-top: 80%;
+    background-image: url('imagens/carro1.jpg'); /*Para outras fotos, acrescentar no style inline de veiculo-teste.html*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+/*section.venda-single .nav-galeria .nav-galeria-wrapper .mini-img-wrapper#selected-photo{
+    border: 3px solid rgb(200,200,200);
+}*/
+
+section.venda-single .descricao-veiculo{
+    float: left;
+    width: 40%;
+    padding: 40px;
+    margin-top: 50px;
+}
+
+section.venda-single .descricao-veiculo p{
+    margin-top: 25px;
+    max-width: 400px;
+    font-size: 18px;
+}
+
+section.venda-single .descricao-veiculo .btn1{
+    width: 130px;
+    height: 40px;
+}
+
+section.venda-single .descricao-veiculo a{
+    margin-top: 25px;
+    padding-top: 8px;
+}
+
+/* Sessão formulário de contato */
+
+section.contato{
+    padding: 90px 2% 50px 2%;
+}
+
+/* Página Sobre */
+/* Sessão descrição empresa */
+
+section.sobre{
+    min-height: 90%;
+    padding: 90px 2%;
+}
+
+section.sobre .container{
+    max-width: 800px;
+    margin-top: 40px;
+}
+
+section.sobre .img-destaque-sobre{
+    width: 100%;
+    padding-top: 60%;
+    background-color: rgb(220,220,220);
+}
+
+section.sobre .descricao-empresa{
+    margin-top: 30px;
+}
+
+section.sobre .descricao-empresa h2{
+    font-size: 24px;
+}
+
+section.sobre .descricao-empresa p{
+    font-size: 17px;
+    margin-top: 10px;
+    line-height: 28px;
+}
+
+/* Sessão descrição autor */
+
+section.sobre .descricao-autor{
+    margin-top: 30px;
+}
+
+section.sobre .descricao-autor .img-small{
+    float: left;
+    width: 30%;
+    padding-top: 30%;
+    background-color: rgb(220,220,220);
+}
+
+section.sobre .descricao-autor p{
+    float: left;
+    width: 70%;
+    font-size: 17px;
+    padding: 10px 0 0 30px;
+    line-height: 28px;
+}
+
+/* Design Responsivo */
+
+@media screen and (max-width: 1400px){
+    section.banner{
+        background-size: 90% auto;
+        background-position: 200% 100%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    section.banner{
+        background-size: cover;
+        background-position: center;
+        height: 70vw;
+        min-height: 500px;
+    }
+
+    section.servicos-descricao .half1-wrapper a{
+        display: block;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    header nav.desktop{
+        display: none;
+    }
+
+    header nav.mobile{
+        display: block;
+    }
+
+    section.banner .text-banner{
+        padding: 70px;
+    }
+
+    section.banner .text-banner-single{
+        font-size: 20px;
+    }
+
+    section.veiculos-destaque .container{
+        text-align: center;
+    }
+
+    .vitrine-destaque{
+        float: none;
+        display: inline-block;
+        width: 100%;
+        max-width: 400px;
+        margin-top: 20px;
+    }
+
+    .vitrine-destaque a{
+        display: inline-block;
+    }
+
+    section.servicos-descricao{
+        flex-direction: column;
+    }
+
+    section.servicos-descricao .half1{
+        width: 100%;
+        text-align: left;
+        padding-right: 8%;
+        padding-left: 15%;
+    }
+
+    section.servicos-descricao .half2{
+        width: 100%;
+        padding-right: 8%;
+        padding-left: 8%;
+    }
+
+    section.contato form .w50{
+        width: 100%;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    footer nav{
+        display: none;
+    }
+
+    footer p{
+        float: none;
+    }
+
+    section.venda .content-venda .sidebar{
+        width: 100%;
+        text-align: center;
+    }
+
+    section.venda .content-venda .sidebar .search1{
+        width: 90%;
+        display: inline-block;
+    }
+
+    section.venda .content-venda .sidebar .search2{
+        display: inline-block;
+        text-align: left;
+    }
+
+    section.venda .content-venda .vitrine-venda{
+        width: 100%;
+        text-align: center;
+    }
+
+    section.venda-single .info-veiculo{
+        float: none;
+        width: 100%;
+    }
+
+    section.venda-single .descricao-veiculo{
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding: 20px 40px;
+        margin-top: 20px;
+    }
+
+    section.venda-single .descricao-veiculo p{
+        display: inline-block;
+        max-width: 600px;
+    }
+    
+    section.venda-single .descricao-veiculo a{
+        display: inline-block;
+    }
+
+    section.sobre .descricao-empresa, section.sobre .descricao-autor{
+        padding: 0 2%;
+        text-align: center;
+    }
+
+    section.sobre .descricao-autor .img-small{
+        float: none;
+        width: 60%;
+        max-width: 400px;
+        padding-top: 60%;
+        display: inline-block;
+        margin-top: 20px;
+    }
+    
+    section.sobre .descricao-autor p{
+        float: none;
+        width: 100%;
+        padding-left: 0;
+        margin-top: 10px;
+    }
+}

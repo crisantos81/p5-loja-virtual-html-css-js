@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projeto 6 - Site Empresa Carros</title>
+        <meta charset="utf-8" />
+        <meta name="author" content="" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <!--<link href="icone.ico" rel="shortcut icon" type="image-x.png" />-->
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header id="pagina-venda">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html"><img src="imagens/logo.jpg" /></a>
+                </div>
+                <nav class="desktop">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="venda.html" id="selected">Venda</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="" goto="contato">Contato</a></li>
+                    </ul>
+                </nav>
+                <nav class="mobile">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="venda.html" id="selected">Venda</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="" goto="contato">Contato</a></li>
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+            </div>
+        </header>
+        <section class="venda-single">
+            <div class="line-titulo">
+                <div class="ln1"></div>
+                <h2>Detalhes do Veículo</h2>
+            </div>
+            <div class="container">
+                <div class="info-veiculo">
+                    <div class="info-bread">
+                        <a href="index.html">HOME</a>
+                        <span>></span>
+                        <a href="venda.html">VENDA</a>
+                        <span>></span>
+                        <a href="veiculo-teste.html">VEÍCULO-TESTE</a>
+                    </div>
+                    <div class="foto-destaque"></div>
+                    <div class="nav-galeria-parent">
+                        <div class="arrow-left-nav"></div>
+                        <div class="arrow-right-nav"></div>
+                        <div class="nav-galeria">
+                            <div class="nav-galeria-wrapper">
+                                <div class="mini-img-wrapper" id="selected-photo">
+                                    <div class="mini-img"></div>
+                                </div>
+                                <div class="mini-img-wrapper">
+                                    <div class="mini-img"></div>
+                                </div>
+                                <div class="mini-img-wrapper">
+                                    <div class="mini-img"></div>
+                                </div>
+                                <div class="mini-img-wrapper">
+                                    <div class="mini-img"></div>
+                                </div>
+                                <div class="mini-img-wrapper">
+                                    <div class="mini-img"></div>
+                                </div>
+                                <div class="mini-img-wrapper">
+                                    <div class="mini-img"></div>
+                                </div>
+                                <div class="mini-img-wrapper">
+                                    <div class="mini-img"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="descricao-veiculo">
+                    <h2>Volkswagen Karmann-Ghia</h2>
+                    <h2>R$ 20.000,00</h2>
+                    <p>1.6 8v, Gasolina, 2P, Manual, 1969. Carro em ótimo estado, confortável, com acessórios completos. Único dono. Aceitamos negociação ou troca de veículos.</p>
+                    <a href="#contato-venda" class="btn1">Entre em Contato</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </section>
+        <section class="contato" id="contato">
+            <div class="line-titulo">
+                <div class="ln1"></div>
+                <h2>Contato</h2>
+            </div>
+            <form>
+                <div class="input-wrapper w100">
+                    <input type="text" placeholder="Nome*" required/>
+                </div>
+                <div class="input-wrapper w50">
+                    <input type="text" placeholder="E-mail*" required/>
+                </div>
+                <div class="input-wrapper w50">
+                    <input type="text" placeholder="Telefone*" required/>
+                </div>
+                <div class="input-wrapper w100">
+                    <textarea placeholder="Mensagem*" required></textarea>
+                </div>
+                <div class="input-wrapper w100">
+                    <input class="btn1" type="submit" value="Enviar" />
+                </div>
+                <div class="clear"></div>
+            </form>
+        </section>
+        <section class="veiculos-destaque">
+            <div class="line-titulo">
+                <div class="ln1"></div>
+                <h2>Veículos em destaque</h2>
+            </div>
+            <div class="container">
+                <div class="vitrine-destaque">
+                    <div class="carro-img"></div>
+                    <div class="info-carro">
+                        <h2>Volkswagen Karmann-Ghia</h2>
+                        <p>1.6 8v, Gasolina, 2P, Manual, 1969.</p>
+                        <a href="veiculo-teste.html" class="btn1">Mais Detalhes</a>
+                    </div>
+                </div>
+                <div class="vitrine-destaque">
+                    <div class="carro-img"></div>
+                    <div class="info-carro">
+                        <h2>Volkswagen Karmann-Ghia</h2>
+                        <p>1.6 8v, Gasolina, 2P, Manual, 1969.</p>
+                        <a href="veiculo-teste.html" class="btn1">Mais Detalhes</a>
+                    </div>
+                </div>
+                <div class="vitrine-destaque">
+                    <div class="carro-img"></div>
+                    <div class="info-carro">
+                        <h2>Volkswagen Karmann-Ghia</h2>
+                        <p>1.6 8v, Gasolina, 2P, Manual, 1969.</p>
+                        <a href="veiculo-teste.html" class="btn1">Mais Detalhes</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="venda.html" id="selected">Venda</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="" goto="contato">Contato</a></li>
+                    </ul>
+                </nav>
+                <p>Todos os direitos reservados</p>
+                <div class="clear"></div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="js/functions.js"></script>
+    </body>
+</html>
